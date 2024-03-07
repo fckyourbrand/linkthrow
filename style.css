@@ -37,11 +37,12 @@ body {
 
 body * {
   font-family: "Inter", sans-serif;
-  color:var(--text-color);
+  color: var(--text-color);
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0.24px;
 }
@@ -103,7 +104,7 @@ body * {
 
 /*links */
 ul {
-  list-style: none ;
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -115,7 +116,6 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   padding: 16px 24px;
 
@@ -130,13 +130,12 @@ ul li a {
   font-weight: 500;
 
   transition: background 0.2s;
-
 }
 
 /* pseudo-selector */
 ul li a:hover {
-background: var(--surface-color-hover);
-border: 1.5px solid var(--text-color);
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
 }
 
 /* social links */
@@ -149,12 +148,11 @@ border: 1.5px solid var(--text-color);
   font-size: 24px;
 }
 
-#social-links a{
+#social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px;
-  
 
   transition: background 0.2s;
   border-radius: 50%;
